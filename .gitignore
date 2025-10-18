@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data directories
+data/sentinel2_images/*.tif
+data/sentinel2_images/*.tiff
+output/
+visualizations/
+
+# Download artifacts
+download/*.tif
+download/*.tiff
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Documentation build
+docs/_build/
