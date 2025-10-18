@@ -1,0 +1,10 @@
+# Requirements for Cloud Detection Dataset Generator
+
+# Core dependencies
+numpy>=1.21.0
+rasterio>=1.3.0
+pyyaml>=6.0
+tqdm>=4.62.0
+
+# Visualization
+matplotlib>=3.5.0

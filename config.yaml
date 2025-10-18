@@ -1,0 +1,46 @@
+# Configuration file for cloud detection dataset generation
+# Based on Baetens-Hagolle reference dataset
+
+# Input paths
+paths:
+  # Directory containing Sentinel-2 GeoTIFF images
+  sentinel2_images: "data/sentinel2_images"
+  
+  # Directory containing Baetens-Hagolle reference masks
+  reference_masks: "data/data_Baetens_Hagolle/Reference_dataset"
+  
+  # Output directory for generated dataset
+  output: "output/cloud_dataset"
+
+# Dataset generation parameters
+dataset:
+  # Patch size (pixels)
+  patch_size: 256
+  
+  # Stride for patch extraction (pixels)
+  # stride < patch_size creates overlapping patches
+  stride: 128
+  
+  # Validation split ratio
+  val_split: 0.2
+  
+  # Skip patches with high no_data ratio
+  skip_nodata: true
+  
+  # Threshold for no_data pixels (0.0 - 1.0)
+  nodata_threshold: 0.3
+
+# Sentinel-2 bands configuration
+sentinel2:
+  # Available band selections:
+  # - rgb: Red, Green, Blue (3 bands)
+  # - rgb_nir: RGB + Near Infrared (4 bands)
+  # - all_10m: All 10m resolution bands (4 bands)
+  # - all: All 13 bands
+  band_selection: "all"
+
+# Processing parameters
+processing:
+  # Random seed for reproducibility
+  random_seed: 42
+  
