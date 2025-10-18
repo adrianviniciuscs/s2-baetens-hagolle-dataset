@@ -23,13 +23,9 @@ This project provides a streamlined pipeline for preparing cloud detection datas
 
 Baetens, L., Desjardins, C., & Hagolle, O. (2019). *Validation of Copernicus Sentinel-2 Cloud Masks Obtained from MAJA, Sen2Cor, and FMask Processors Using Reference Cloud Masks Generated with a Supervised Active Learning Procedure*. Remote Sensing, 11(4), 433. https://doi.org/10.3390/rs11040433
 
-**Dataset Repository:**
+**Cloud Reference Mask Dataset Repository:**
 
 Baetens, L., & Hagolle, O. (2018). *Sentinel-2 Reference Cloud Masks generated with a supervised active learning procedure* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1460961
-
-**MAJA Cloud Detection Algorithm:**
-
-Hagolle, O., Huc, M., Villa Pascual, D., & Dedieu, G. (2010). *A multi-temporal method for cloud detection, applied to FORMOSAT-2, VENµS, LANDSAT and SENTINEL-2 images*. Remote Sensing of Environment, 114(8), 1747-1755. https://doi.org/10.1016/j.rse.2010.03.002
 
 ### Class Labels
 
@@ -76,7 +72,7 @@ cd download/
 python3 download_gee_cloudshell.py
 ```
 
-**Note**: This step requires Google Earth Engine access and should be run on Google Cloud Shell. See [DOWNLOAD_GUIDE.md](docs/DOWNLOAD_GUIDE.md) for detailed instructions.
+**Note**: This step requires Google Earth Engine access and should be run on Google Cloud Shell. 
 
 Downloaded images should be placed in `data/sentinel2_images/`.
 
@@ -230,13 +226,6 @@ Options:
 ### Processing Parameters
 
 - `random_seed`: Random seed for reproducible train/val splits
-
-## Documentation
-
-- [QUICKSTART.md](QUICKSTART.md) - Quick start guide
-- [DOWNLOAD_GUIDE.md](docs/DOWNLOAD_GUIDE.md) - Guide for downloading Sentinel-2 imagery from GEE
-- [TECHNICAL.md](docs/TECHNICAL.md) - Technical documentation and algorithm details
-- [download/README.md](download/README.md) - Download scripts documentation
 
 ## Project Structure
 
